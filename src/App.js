@@ -1,25 +1,81 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
 
-function App() {
+import Card from "./components/Card";
+
+// const Button=()=>{
+//   return (
+//     <button>Click me</button>
+//   )
+// }
+
+// class Button extends Component{
+//   constructor(){
+//     super();
+//     this.word = "Happy Halloween";
+//   }
+//   render() {
+//     return <button>Click me! { this.word }</button>
+//   }
+// }
+
+function NavBar(){
+  return <div>Navbar</div>
+}
+
+function UserProfile(){
+
+}
+
+function Post(){
+
+}
+
+function Posts(){
+  return <Post />
+}
+
+function Contacts(){
+  
+}
+
+const App=()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <UserProfile />
+      <Posts />
+      <Contacts />
     </div>
   );
 }
 
 export default App;
+
+
+// class BookList extends Component {
+//   constructor() {
+//     super()
+
+//     this.titles = ["moby dick", "the great gatsby", "of mice and men"]
+//   }
+//   render() {
+//     return (
+//       <ul className="book-titles">
+//         {this.titles.map(title => <li>{title}</li>)}
+//       </ul>
+//     )
+//   }
+// }
+
+// function BookList(){
+//   const titles = [ "moby dick", "the great gatsby", "of mice and men" ];
+
+//   return (
+//     <ul className="book-titles">
+//         { titles.map(title => <li>{title}</li>) }
+//     </ul>
+//   )
+// }
+
+
